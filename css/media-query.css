@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+:root {
+    --purple: #5F2C82;
+    --green: #6CD3CF;
+    --green2: #55a3a1;
+    --green3: #2D6462;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: linear-gradient(to bottom, var(--purple), var(--green));
+    }
+
+    main {
+        width: 70vw;
+        display: flex;
+    }
+
+    section.img {
+        width: 40%;
+        height: 320px;
+        margin: -8px;
+        margin-right: 8px;
+        border-radius: 10px 0 0 10px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        width: 800px;
+        height: 350px;
+        transition: 0.3s ease-in-out;
+    }
+
+    section.img {
+        display: none;
+    }
+
+    section.img2 {
+        background-image: url(../images/pexels-lawlesscapture-13737660.jpg);
+        width: 50%;
+        height: 105%;
+        margin: -8px;
+        margin-left: 8px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    input#send:hover {
+        background-color: var(--green3);
+    }
+
+    form a:hover {
+        background-color: var(--green);
+    }
+}
