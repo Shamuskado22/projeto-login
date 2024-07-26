@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+:root {
+    --purple: #5F2C82;
+    --green: #6CD3CF;
+    --green2: #55a3a1;
+    --green3: #2D6462;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--purple);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    background-color: white;
+    padding: 8px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.281);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.img {
+    height: 200px;
+    margin: -8px;
+    margin-bottom: 8px;
+    border-radius: 10px 10px 0 0;
+    background-color: black;
+    background-image: url(../images/pexels-lawlesscapture-13737660.jpg);
+    background-position: left bottom;
+    background-size: cover;
+}
+
+section.form h1 {
+    text-align: center;
+    padding: 16px;
+    font-size: 1.5em;
+}
+
+section.form p {
+    font-size: 0.9em;
+    padding-bottom: 16px;
+}
+
+div.email, div.pass {
+    background-color: var(--purple);
+    border-radius: 8px;
+    margin-bottom: 4px;
+    height: 45px;
+    position: relative;
+}
+
+div.email span, div.pass span {
+    font-size: 2.1em;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    color: white;
+}
+
+div.email #iemail, div.pass #ipass {
+    background-color: var(--green);
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-42%, -50%);
+    text-align: center;
+}
+
+div.email #iemail:focus, div.pass #ipass:focus {
+    background-color: white;
+}
+
+input#send {
+    border: none;
+    background-color: var(--green2);
+    color: white;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.05em;
+}
+
+input#send:active {
+    background-color: var(--green3);
+}
+
+form a {
+    display: block;
+    text-decoration: none;
+    color: var(--green3);
+    border: 1px solid var(--green3);
+    text-align: center;
+    /* height: 40px; */
+    border-radius: 8px;
+    padding: 12px;
+}
+
+form a:active {
+    background-color: var(--green);
+}
+
+form a .material-symbols-outlined {
+    font-size: 1em;
+}
