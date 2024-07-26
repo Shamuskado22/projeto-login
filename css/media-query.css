@@ -25,12 +25,19 @@
         border-radius: 10px 0 0 10px;
     }
 
+    section.form  {
+        width: 100%;
+    }
+
+    section.form p {
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 992px) {
     main {
         width: 800px;
-        height: 350px;
+        height: 55vh;
         transition: 0.3s ease-in-out;
     }
 
@@ -41,7 +48,6 @@
     section.img2 {
         background-image: url(../images/pexels-lawlesscapture-13737660.jpg);
         width: 50%;
-        height: 105%;
         margin: -8px;
         margin-left: 8px;
         border-radius: 0 10px 10px 0;
