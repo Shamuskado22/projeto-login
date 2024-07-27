@@ -47,6 +47,8 @@
 
     section.img2 {
         background-image: url(../images/pexels-lawlesscapture-13737660.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 50%;
         margin: -8px;
         margin-left: 8px;
