@@ -81,8 +81,8 @@ div.email #iemail, div.pass #ipass {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-42%, -50%);
     text-align: center;
+    transform: translate(-42%, -50%);
 }
 
 div.email #iemail:focus, div.pass #ipass:focus {
